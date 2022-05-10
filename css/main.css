@@ -1,0 +1,221 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  background-image: url("../images/bg-mobile.png");
+  background-color: black;
+  background-size: cover;
+}
+body .hero {
+  background-color: hsl(228deg, 56%, 26%);
+  padding: 2rem;
+  border-radius: 0.5rem 7rem 0.5rem 0.5rem;
+}
+body .hero .logo {
+  padding: 1rem 0;
+}
+body .hero nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body .hero nav ul li {
+  background-color: hsl(229deg, 57%, 11%);
+  padding: 0.8rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+body .storage {
+  border-radius: 0.5rem;
+  background-color: hsl(228deg, 56%, 26%);
+}
+body .storage .storage-highlight {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+body .storage .storage-highlight .storage-highligh-desc {
+  padding-left: 0.5rem;
+}
+body .storage .storage-details {
+  color: hsl(243deg, 100%, 93%);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+body .storage .storage-details .gradient-backgound {
+  margin: 0.5rem;
+  background-color: hsl(229deg, 57%, 11%);
+  border-radius: 0.5rem;
+}
+body .storage .storage-details .gradient-backgound .gradient {
+  background: linear-gradient(90deg, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+}
+body .storage .storage-details .gradient-backgound .gradient .gradient-ball {
+  background-color: white;
+  margin: 0.1rem;
+  border-radius: 50%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+body .storage {
+  justify-content: center;
+}
+body .storage .storage-highlight {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: hsl(229deg, 7%, 55%);
+  vertical-align: middle;
+  line-height: normal;
+}
+body .storage .storage-highlight .storage-highligh-NB {
+  font-size: 2rem;
+  color: black;
+}
+body .storage .storage-details .gradient-start-end {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.card {
+  padding: 40px;
+}
+
+body button {
+  border: none;
+}
+body button:hover {
+  border: none;
+}
+
+main {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .hero nav ul {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .storage {
+  height: 10rem;
+}
+main .storage .storage-highlight {
+  position: relative;
+  width: 190px;
+  left: calc(50% - 95px);
+  top: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .storage .storage-details {
+  position: relative;
+  top: -4rem;
+  display: flex;
+  flex-direction: column;
+}
+main .storage .storage-details .gradient-backgound {
+  width: calc(100% - 1rem);
+  height: 1rem;
+}
+main .storage .storage-details .gradient-backgound .gradient {
+  width: calc(81.5% - 0.2rem);
+  height: 0.8rem;
+}
+main .storage .storage-details .gradient-backgound .gradient .gradient-ball {
+  width: 0.6rem;
+  height: 0.6rem;
+  left: calc(81.5% - 2rem - 0.2rem - 0.2rem - 0.1rem);
+  position: absolute;
+}
+main .storage .storage-details .gradient-start-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+  }
+  body main {
+    width: 930px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  body main .hero {
+    width: 350px;
+  }
+  body main .storage {
+    width: 550px;
+  }
+  body main .storage .storage-highlight {
+    position: relative;
+    width: 160px;
+    padding: 0.5rem;
+    left: calc(80% - 95px);
+    top: -2rem;
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+  }
+  body main .storage .storage-highlight::after {
+    content: "";
+    position: absolute;
+    border-top: 30px solid #fff;
+    border-left: 30px solid transparent;
+    bottom: -16px;
+    right: 0;
+  }
+  body main .storage .storage-details {
+    top: -2rem;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 900px) and (max-height: 550px) {
+  main {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}/*# sourceMappingURL=main.css.map */

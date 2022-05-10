@@ -1,0 +1,32 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+$fontDisplay: 'Raleway', sans-serif;;
+body {
+    font-family: $fontDisplay;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    .storage {
+        justify-content: center;
+
+        .storage-highlight {
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: c.$GrayishBlue;
+            vertical-align: middle;
+            line-height: normal;
+            .storage-highligh-NB {
+                font-size: 2rem;
+                color: black;
+            }
+        }
+        .storage-details {
+            .gradient-start-end {
+                font-weight: 600;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

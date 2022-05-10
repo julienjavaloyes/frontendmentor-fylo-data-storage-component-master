@@ -1,0 +1,62 @@
+
+@use  '../0-abstracts/colors' as c;
+
+body {
+    background-image: url('../images/bg-mobile.png');
+    background-color: black;
+    background-size: cover;
+
+    .hero {
+        background-color: c.$DarkBlue;
+        padding: 2rem;
+        border-radius: 0.5rem 7rem 0.5rem 0.5rem;
+        .logo {
+            padding: 1rem 0;
+        }
+        nav {
+            ul {
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                li {
+                    background-color: c.$VeryDarkBlue;
+                    padding: 0.8rem;
+                    margin: 0.5rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+    .storage {
+        border-radius: 0.5rem;
+        background-color: c.$DarkBlue;
+        .storage-highlight {
+            background-color: white;
+            border-radius: 0.5rem;
+            .storage-highligh-desc {
+                padding-left: 0.5rem;
+            }
+        }
+        .storage-details {
+            color: c.$PaleBlue;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            .gradient-backgound {
+                margin: 0.5rem;
+                background-color: c.$VeryDarkBlue;
+                border-radius: 0.5rem;
+                .gradient {
+                    background: linear-gradient(90deg,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+                    margin: 0.1rem;
+                    border-radius: 0.5rem;
+                    .gradient-ball {
+                        background-color: white;
+                        margin: 0.1rem;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
